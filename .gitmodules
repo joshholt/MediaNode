@@ -4,3 +4,6 @@
 [submodule "node_modules/middleware"]
 	path = node_modules/middleware
 	url = git://github.com/creationix/creationix.git
+[submodule "node_modules/simple-mime"]
+	path = node_modules/simple-mime
+	url = git://github.com/creationix/simple-mime.git
