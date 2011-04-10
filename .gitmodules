@@ -1,0 +1,6 @@
+[submodule "node_modules/stack"]
+	path = node_modules/stack
+	url = git://github.com/creationix/stack.git
+[submodule "node_modules/middleware"]
+	path = node_modules/middleware
+	url = git://github.com/creationix/creationix.git
