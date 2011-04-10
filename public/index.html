@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8" />
 	<title>MediaNode</title>
+	<link rel="stylesheet" href="stylesheets/reset.css" />
 	<link rel="stylesheet" href="stylesheets/style.css" />
+	<link rel="stylesheet" href="stylesheets/css3buttons.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="scripts/logic2.js" type="text/javascript" charset="utf-8"></script>
@@ -25,9 +27,12 @@
 	<div id="browser"></div>
 	<div id="playlist"></div>
 	<div id="controls">
-		<a id="addall" class="medium awesome">Add all</a>
-		<a id="previous" class="medium awesome">Previous</a>
-		<a id="next" class="medium awesome">Next</a>
+		<a id="addall" 	  class="primary positive pill button"><span class="icon plus"></span>Add all</a>
+		<div id="playlist-controls">
+		    <a id="removeAll" class="left negative pill button"><span class="icon cross"></span>Remove all</a>
+			<a id="previous"  class="middle pill button"><span class="icon leftarrow"></span>Previous</a>
+			<a id="next" 	  class="right  pill button">Next&nbsp;&nbsp;<span class="icon rightarrow"></span></a>
+		</div>
 	</div>
 </body>
 </html>

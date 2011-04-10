@@ -6,12 +6,13 @@ $(document).ready(function() {
 	    ,manualSeek   = false
 			,init ,load ,populate ,up ,clickDir ,clickFile ,addToPlaylist ,addAll
 			,play, previous, next ,audio ,loadingIndicator ,positionIndicator
-			,timeleft;
+			,timeleft ,removeAll;
 	
 	init = function() {
 		load(path);
 		$('#player').bind('ended', next);
 		$('#addall').click(addAll);
+		$('#removeAll').click(removeAll);
 		$('#previous').click(previous);
 		$('#next').click(next);
 	};
@@ -93,6 +94,11 @@ $(document).ready(function() {
 			cls = isEven ? (i%2 === 0) ? 'odd' : 'even' : (i%2 === 0) ? 'even' : 'odd';
 			addToPlaylist($(e).data('file'), cls);
 		});
+	};
+	
+	removeAll = function() {
+		$('#playlist').empty();
+		$('#player').attr('src', null);
 	};
 	
 	play = function(elem) {
