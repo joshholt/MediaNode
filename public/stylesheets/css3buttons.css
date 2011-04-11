@@ -6,7 +6,6 @@ a.button:focus, button:focus,
 a.button:hover, button:hover { color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
 a.button:active, button:active,
 a.button.active, button.active { background-position: 0 -81px; border-color: #347BBA; background-color: #0F5EA2; color: #FFFFFF; text-shadow: none; }
-a.button:active, button:active { top: 1px }
 a.button.negative:focus, button.negative:focus,
 a.button.negative:hover, button.negative:hover { color: #FFFFFF; background-position: 0 -121px; background-color: #D84743; border-color: #911D1B; }
 a.button.negative:active, button.negative:active,
@@ -86,3 +85,28 @@ a.button span.icon.uparrow, button span.icon.uparrow { background-position: 0 -8
 a.button:hover span.icon.uparrow, button:hover span.icon.uparrow { background-position: 0 -839px }
 a.button span.icon.user, button span.icon.user { background-position: 0 -854px }
 a.button:hover span.icon.user, button:hover span.icon.user { background-position: 0 -869px }
+
+a.button {
+	moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.9);
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	background: -webkit-gradient(linear,0% 0%,0% 100%,from(rgba(255, 255, 255, 1)),to(rgba(185, 185, 185, 1)));
+	background: -moz-linear-gradient(top,rgba(255, 255, 255, 1),rgba(185, 185, 185, 1));
+}
+
+a.button:hover {
+	background:rgba(45, 125, 197, 1)
+}
+ 
+a.button:active, button:focus {
+	background:-webkit-gradient(linear,0% 100%,0% 0%,from(rgba(45, 125, 197, 1)),to(rgba(15, 94, 162, 1)));
+	background:-moz-linear-gradient(bottom,rgba(45, 125, 197, 1),rgba(15, 94, 162, 1));
+}
+ 
+a.button:disabled {
+	color:rgba(0,0,0,0.4);
+	text-shadow:1px 1px 0px rgba(255,255,255,0.5);
+	background:rgba(220,220,220,1);
+}
