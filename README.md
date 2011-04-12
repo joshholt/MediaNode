@@ -10,7 +10,7 @@ NodeJS + Your Media === MediaNode
 * A Modern Web Browser (i.e. Safari, Chrome)
 
 ####After Getting What You Need Above...####
-1. `git clone git://github.com/joshholt/MediaNode.git`
+1. `git clone --recursive git://github.com/joshholt/MediaNode.git`
 2. `cd ./MediaNode`
 3. `mkdir -pv ./media/Music`
 4. `ln -s /path/to/your/media ./public/media/Music`
